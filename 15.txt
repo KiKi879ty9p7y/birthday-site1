@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С Днём Рождения, милая Аня!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #ffe6f0, #fff5f9);
+      color: #7b2f4c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .card {
+      background: #ffffffcc;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8em;
+      color: #c0396c;
+    }
+    p {
+      font-size: 1.3em;
+      line-height: 1.8;
+    }
+    .signature {
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    .petals {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .petals span {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+      animation: fall 10s linear infinite;
+    }
+    @keyframes fall {
+      0% {transform: translateY(-100px); opacity: 1;}
+      100% {transform: translateY(110vh); opacity: 0;}
+    }
+  </style>
+</head>
+<body>
+  <div class="petals">
+    <span style="left: 10%; animation-delay: 0s;"></span>
+    <span style="left: 30%; animation-delay: 2s;"></span>
+    <span style="left: 50%; animation-delay: 4s;"></span>
+    <span style="left: 70%; animation-delay: 1s;"></span>
+    <span style="left: 90%; animation-delay: 3s;"></span>
+  </div>
+  <div class="card">
+    <h1>С Днём Рождения, милая Аня!</h1>
+    <p>
+      Пусть каждый рассвет дарит тебе вдохновение,<br>
+      А каждый закат — тихую радость и умиротворение.<br>
+      Ты словно утро в июне: нежна, тиха, волшебна.<br>
+      Желаю тебе любви, как солнце — тёплой и бесконечной,<br>
+      Счастья, как звёзд — чтобы никогда не сосчитать.<br>
+    </p>
+    <p class="signature">
+      С любовью и теплом,<br>
+      Твой преданный друг и почитатель слов. 💫
+    </p>
+  </div>
+</body>
+</html>
+
